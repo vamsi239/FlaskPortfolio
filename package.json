@@ -1,0 +1,23 @@
+{
+  "name": "twprj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./tailwind/input.css -o ./static/css/style.css --watch",
+    "dev": "concurrently \"npx tailwindcss -i ./tailwind/input.css -o ./static/css/style.css --watch\" \"flask --app app run --debug\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.0"
+  }
+}
